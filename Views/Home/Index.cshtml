@@ -6,7 +6,9 @@
             <h4>Configure Azure AD Authentication</h4>
             <p>
                 Add application setting
-                <code>"ida:Tenant"</code> and  <code>"ida:Audience"</code>
+                <code>"ida:Tenant"</code>,
+                <code>"ida:Audience"</code>
+                and <code>"ida:WhitelistedClientId"</code>
                 in <a href="https://portal.azure.com">portal.azure.com</a>
             </p>
         </div>
@@ -31,6 +33,10 @@
                         <tr>
                             <td>ida:Audience</td>
                             <td>@ViewBag.Audience</td>
+                        </tr>
+                        <tr>
+                            <td>ida:WhitelistedClientId</td>
+                            <td>@ViewBag.WhitelistedClientId</td>
                         </tr>
                     </tbody>
                 </table>
