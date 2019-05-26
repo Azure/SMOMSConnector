@@ -27,139 +27,6 @@
             </summary>
             <value>The controller name.</value>
         </member>
-        <member name="T:Microsoft.Web.Http.ReportApiVersionsAttribute">
-            <content>
-            Provides the implementation for ASP.NET Web API.
-            </content>
-            <summary>
-            Represents an <see cref="T:System.Web.Http.Filters.ActionFilterAttribute">action filter</see> which reports API version information for
-            an entire service or specific service action.
-            </summary>
-        </member>
-        <member name="M:Microsoft.Web.Http.ReportApiVersionsAttribute.OnActionExecuted(System.Web.Http.Filters.HttpActionExecutedContext)">
-            <summary>
-            Occurs after the controller action has executed.
-            </summary>
-            <param name="actionExecutedContext">The <see cref="T:System.Web.Http.Filters.HttpActionExecutedContext">HTTP action context</see> that executed.</param>
-            <remarks>This method will write the "api-supported-versions" and "api-deprecated-versions" HTTP headers into the
-            response provided that there is a response and the executed action was not version-neutral.</remarks>
-        </member>
-        <member name="T:Microsoft.Web.Http.SR">
-            <summary>
-               A strongly-typed resource class, for looking up localized strings, etc.
-            </summary>
-        </member>
-        <member name="P:Microsoft.Web.Http.SR.ResourceManager">
-            <summary>
-               Returns the cached ResourceManager instance used by this class.
-            </summary>
-        </member>
-        <member name="P:Microsoft.Web.Http.SR.Culture">
-            <summary>
-               Overrides the current thread's CurrentUICulture property for all
-               resource lookups using this strongly typed resource class.
-            </summary>
-        </member>
-        <member name="P:Microsoft.Web.Http.SR.ActionSelector_AmbiguousMatchType">
-            <summary>
-               Looks up a localized string similar to {0} on type {1}.
-            </summary>
-        </member>
-        <member name="P:Microsoft.Web.Http.SR.ApiControllerActionSelector_ActionNameNotFound">
-            <summary>
-               Looks up a localized string similar to No action was found on the controller &apos;{0}&apos; that matches the name &apos;{1}&apos;..
-            </summary>
-        </member>
-        <member name="P:Microsoft.Web.Http.SR.ApiControllerActionSelector_ActionNotFound">
-            <summary>
-               Looks up a localized string similar to No action was found on the controller &apos;{0}&apos; that matches the request..
-            </summary>
-        </member>
-        <member name="P:Microsoft.Web.Http.SR.ApiControllerActionSelector_AmbiguousMatch">
-            <summary>
-               Looks up a localized string similar to Multiple actions were found that match the request: {0}.
-            </summary>
-        </member>
-        <member name="P:Microsoft.Web.Http.SR.ApiControllerActionSelector_HttpMethodNotSupported">
-            <summary>
-               Looks up a localized string similar to The requested resource does not support http method &apos;{0}&apos;..
-            </summary>
-        </member>
-        <member name="P:Microsoft.Web.Http.SR.ApiVersionBadGroupVersion">
-            <summary>
-               Looks up a localized string similar to The specified API group version &apos;{0}&apos; is invalid..
-            </summary>
-        </member>
-        <member name="P:Microsoft.Web.Http.SR.ApiVersionBadStatus">
-            <summary>
-               Looks up a localized string similar to The specified API version status &apos;{0}&apos; is invalid..
-            </summary>
-        </member>
-        <member name="P:Microsoft.Web.Http.SR.ApiVersionInvalidFormat">
-            <summary>
-               Looks up a localized string similar to The specified API version is invalid..
-            </summary>
-        </member>
-        <member name="P:Microsoft.Web.Http.SR.ApiVersionInvalidFormatCode">
-            <summary>
-               Looks up a localized string similar to The format &apos;{0}&apos; is invalid or not supported..
-            </summary>
-        </member>
-        <member name="P:Microsoft.Web.Http.SR.ApiVersionNotSupported">
-            <summary>
-               Looks up a localized string similar to The requested API version &apos;{0}&apos; is not supported..
-            </summary>
-        </member>
-        <member name="P:Microsoft.Web.Http.SR.ApiVersionUnspecified">
-            <summary>
-               Looks up a localized string similar to An API version is required, but was not specified..
-            </summary>
-        </member>
-        <member name="P:Microsoft.Web.Http.SR.ControllerNameNotFound">
-            <summary>
-               Looks up a localized string similar to No route providing a controller name was found to match request URI &apos;{0}&apos;..
-            </summary>
-        </member>
-        <member name="P:Microsoft.Web.Http.SR.DefaultControllerFactory_ControllerNameAmbiguous_WithRouteTemplate">
-            <summary>
-               Looks up a localized string similar to Multiple types were found that match the controller named &apos;{0}&apos;. This can happen if the route that services this request (&apos;{1}&apos;) found multiple controllers defined with the same name but differing namespaces, which is not supported.{3}{3}The request for &apos;{0}&apos; has found the following matching controllers:{2}.
-            </summary>
-        </member>
-        <member name="P:Microsoft.Web.Http.SR.DefaultControllerFactory_ControllerNameNotFound">
-            <summary>
-               Looks up a localized string similar to No type was found that matches the controller named &apos;{0}&apos;..
-            </summary>
-        </member>
-        <member name="P:Microsoft.Web.Http.SR.DirectRoute_AmbiguousController">
-            <summary>
-               Looks up a localized string similar to Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.{1}{1}The request has found the following matching controller types: {0}.
-            </summary>
-        </member>
-        <member name="P:Microsoft.Web.Http.SR.InvalidActionMethodExpression">
-            <summary>
-               Looks up a localized string similar to The expression &apos;{0}&apos; must refer to a controller action method..
-            </summary>
-        </member>
-        <member name="P:Microsoft.Web.Http.SR.MultipleDifferentApiVersionsRequested">
-            <summary>
-               Looks up a localized string similar to The following API versions were requested: {0}. At most, only a single API version may be specified. Please update the intended API version and retry the request..
-            </summary>
-        </member>
-        <member name="P:Microsoft.Web.Http.SR.ResourceNotFound">
-            <summary>
-               Looks up a localized string similar to No HTTP resource was found that matches the request URI &apos;{0}&apos;..
-            </summary>
-        </member>
-        <member name="P:Microsoft.Web.Http.SR.VersionedControllerNameNotFound">
-            <summary>
-               Looks up a localized string similar to No route providing a controller name with API version &apos;{1}&apos; was found to match request URI &apos;{0}&apos;..
-            </summary>
-        </member>
-        <member name="P:Microsoft.Web.Http.SR.VersionedResourceNotSupported">
-            <summary>
-               Looks up a localized string similar to The HTTP resource that matches the request URI &apos;{0}&apos; does not support the API version &apos;{1}&apos;..
-            </summary>
-        </member>
         <member name="T:Microsoft.Web.Http.Controllers.ApiVersionActionSelector">
             <content>
             Provides additional content for the <see cref="T:Microsoft.Web.Http.Controllers.ApiVersionActionSelector"/> class.
@@ -186,7 +53,7 @@
         <member name="T:Microsoft.Web.Http.Controllers.ApiVersionActionSelector.ActionSelectorCacheItem">
             <summary>
             <para>All caching is in a dedicated cache class, which may be optionally shared across selector instances.</para>
-            <para>Make this a private nested class so that nobody else can conflict with our state.</para>
+            <para>Make this a nested class so that nobody else can conflict with our state.</para>
             <para>Cache is initialized during ctor on a single thread.</para>
             </summary>
         </member>
@@ -339,6 +206,23 @@
             <param name="request">The <see cref="T:System.Net.Http.HttpRequestMessage">request</see> to the controller name for.</param>
             <returns>The name of the controller for the specified <paramref name="request"/>.</returns>
         </member>
+        <member name="T:Microsoft.Web.Http.ReportApiVersionsAttribute">
+            <content>
+            Provides the implementation for ASP.NET Web API.
+            </content>
+            <summary>
+            Represents an <see cref="T:System.Web.Http.Filters.ActionFilterAttribute">action filter</see> which reports API version information for
+            an entire service or specific service action.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Web.Http.ReportApiVersionsAttribute.OnActionExecuted(System.Web.Http.Filters.HttpActionExecutedContext)">
+            <summary>
+            Occurs after the controller action has executed.
+            </summary>
+            <param name="actionExecutedContext">The <see cref="T:System.Web.Http.Filters.HttpActionExecutedContext">HTTP action context</see> that executed.</param>
+            <remarks>This method will write the "api-supported-versions" and "api-deprecated-versions" HTTP headers into the
+            response provided that there is a response and the executed action was not version-neutral.</remarks>
+        </member>
         <member name="T:Microsoft.Web.Http.Routing.ApiVersionRouteConstraint">
             <summary>
             Represents a route constraint for <see cref="T:Microsoft.Web.Http.ApiVersion">API versions</see>.
@@ -395,91 +279,141 @@
             Used to provide the controller name.
             </summary>
         </member>
-        <member name="T:Microsoft.Web.Http.Versioning.ApiVersioningOptions">
-            <content>
-            Provides additional implementation specific to Microsoft ASP.NET Web API.
-            </content>
+        <member name="T:Microsoft.Web.Http.SR">
             <summary>
-            Represents the possible API versioning options for services.
+              A strongly-typed resource class, for looking up localized strings, etc.
             </summary>
         </member>
-        <member name="P:Microsoft.Web.Http.Versioning.ApiVersioningOptions.CreateBadRequest">
+        <member name="P:Microsoft.Web.Http.SR.ResourceManager">
             <summary>
-            Gets or sets the function to used to create HTTP 400 (Bad Request) responses related to API versioning.
-            </summary>
-            <value>The <see cref="T:Microsoft.Web.Http.Versioning.CreateBadRequestDelegate">function</see> to used to create a HTTP 400 (Bad Request)
-            <see cref="T:System.Net.Http.HttpResponseMessage">response</see> related to API versioning.</value>
-            <remarks>The default value generates responses that are compliant with the Microsoft REST API Guidelines.
-            This option should only be changed by service authors that intentionally want to deviate from the
-            established guidance.</remarks>
-        </member>
-        <member name="M:Microsoft.Web.Http.Versioning.ApiVersioningOptions.#ctor">
-            <summary>
-            Initializes a new instance of the <see cref="T:Microsoft.Web.Http.Versioning.ApiVersioningOptions"/> class.
+              Returns the cached ResourceManager instance used by this class.
             </summary>
         </member>
-        <member name="P:Microsoft.Web.Http.Versioning.ApiVersioningOptions.ReportApiVersions">
+        <member name="P:Microsoft.Web.Http.SR.Culture">
             <summary>
-            Gets or sets a value indicating whether requests report the service API version compatibility
-            information in responses.
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
             </summary>
-            <value>True if the responses contain service API version compatibility information; otherwise,
-            false. The default value is <c>false</c>.</value>
-            <remarks>
-            <para>When this property is set to <c>true</c>, the HTTP headers "api-supported-versions" and
-            "api-deprecated-versions" will be added to all valid service routes. This information is useful
-            for advertising which versions are supported and scheduled for deprecation to clients. This
-            information is also useful when supporting the OPTIONS verb.</para>
-            <para>By setting this property to <c>true</c>, the <see cref="T:Microsoft.Web.Http.ReportApiVersionsAttribute"/> will
-            be added a global action filter. To enable more granular control over when service API versions
-            are reported, apply the <see cref="T:Microsoft.Web.Http.ReportApiVersionsAttribute"/> on specific controllers or
-            controller actions.</para>
-            </remarks>
         </member>
-        <member name="P:Microsoft.Web.Http.Versioning.ApiVersioningOptions.AssumeDefaultVersionWhenUnspecified">
+        <member name="P:Microsoft.Web.Http.SR.ActionSelector_AmbiguousMatchType">
             <summary>
-            Gets or sets a value indicating whether a default version is assumed when a client does
-            does not provide a service API version.
+              Looks up a localized string similar to {0} on type {1}.
             </summary>
-            <value>True if the a default API version should be assumed when a client does not
-            provide a service API version; otherwise, false. The default value is <c>false</c>.</value>
-            <remarks>When a default API version is assumed, the version used is based up the
-            result of the <see cref="M:Microsoft.Web.Http.Versioning.IApiVersionSelector.SelectVersion(System.Net.Http.HttpRequestMessage,Microsoft.Web.Http.Versioning.ApiVersionModel)"/> method.</remarks>
         </member>
-        <member name="P:Microsoft.Web.Http.Versioning.ApiVersioningOptions.DefaultApiVersion">
+        <member name="P:Microsoft.Web.Http.SR.ApiControllerActionSelector_ActionNameNotFound">
             <summary>
-            Gets or sets the default API version applied to services that do not have explicit versions.
+              Looks up a localized string similar to No action was found on the controller &apos;{0}&apos; that matches the name &apos;{1}&apos;..
             </summary>
-            <value>The default <see cref="T:Microsoft.Web.Http.ApiVersion">API version</see>. The default value is <see cref="P:Microsoft.Web.Http.ApiVersion.Default"/>.</value>
         </member>
-        <member name="P:Microsoft.Web.Http.Versioning.ApiVersioningOptions.ApiVersionReader">
+        <member name="P:Microsoft.Web.Http.SR.ApiControllerActionSelector_ActionNotFound">
             <summary>
-            Gets or sets the service API version reader.
+              Looks up a localized string similar to No action was found on the controller &apos;{0}&apos; that matches the request..
             </summary>
-            <value>An <see cref="T:Microsoft.Web.Http.Versioning.IApiVersionReader">API version reader</see> object. The default value
-            is an instance of the <see cref="T:Microsoft.Web.Http.Versioning.QueryStringApiVersionReader"/>.</value>
-            <remarks>The <see cref="T:Microsoft.Web.Http.Versioning.IApiVersionReader">API version reader</see> is used to read the
-            service API version specified by a client. The default value is the
-            <see cref="T:Microsoft.Web.Http.Versioning.QueryStringApiVersionReader"/>, which only reads the service API version from
-            the "api-version" query string parameter. Replace the default value with an alternate
-            implementation, such as the <see cref="T:Microsoft.Web.Http.Versioning.QueryStringOrHeaderApiVersionReader"/>, which
-            can read the service API version from additional information like HTTP headers.</remarks>
         </member>
-        <member name="P:Microsoft.Web.Http.Versioning.ApiVersioningOptions.ApiVersionSelector">
+        <member name="P:Microsoft.Web.Http.SR.ApiControllerActionSelector_AmbiguousMatch">
             <summary>
-            Gets or sets the service API version selector.
+              Looks up a localized string similar to Multiple actions were found that match the request: {0}.
             </summary>
-            <value>An <see cref="T:Microsoft.Web.Http.Versioning.IApiVersionSelector">API version selector</see> object.
-            The default value is an instance of the <see cref="T:Microsoft.Web.Http.Versioning.DefaultApiVersionSelector"/>.</value>
-            <remarks>The <see cref="T:Microsoft.Web.Http.Versioning.IApiVersionSelector">API version selector</see> is used to select
-            an appropriate API version when a client does not specify a version. The default value is the
-            <see cref="T:Microsoft.Web.Http.Versioning.DefaultApiVersionSelector"/>, which always selects the <see cref="P:Microsoft.Web.Http.Versioning.ApiVersioningOptions.DefaultApiVersion"/>.</remarks>
         </member>
-        <member name="P:Microsoft.Web.Http.Versioning.ApiVersioningOptions.Conventions">
+        <member name="P:Microsoft.Web.Http.SR.ApiControllerActionSelector_HttpMethodNotSupported">
             <summary>
-            Gets or sets the builder used to define API version conventions.
+              Looks up a localized string similar to The requested resource does not support HTTP method &apos;{0}&apos;..
             </summary>
-            <value>An <see cref="T:Microsoft.Web.Http.Versioning.Conventions.ApiVersionConventionBuilder">API version convention builder</see>.</value>
+        </member>
+        <member name="P:Microsoft.Web.Http.SR.ApiVersionBadGroupVersion">
+            <summary>
+              Looks up a localized string similar to The specified API group version &apos;{0}&apos; is invalid..
+            </summary>
+        </member>
+        <member name="P:Microsoft.Web.Http.SR.ApiVersionBadStatus">
+            <summary>
+              Looks up a localized string similar to The specified API version status &apos;{0}&apos; is invalid..
+            </summary>
+        </member>
+        <member name="P:Microsoft.Web.Http.SR.ApiVersionInvalidFormat">
+            <summary>
+              Looks up a localized string similar to The specified API version is invalid..
+            </summary>
+        </member>
+        <member name="P:Microsoft.Web.Http.SR.ApiVersionInvalidFormatCode">
+            <summary>
+              Looks up a localized string similar to The format &apos;{0}&apos; is invalid or not supported..
+            </summary>
+        </member>
+        <member name="P:Microsoft.Web.Http.SR.ApiVersionNotSupported">
+            <summary>
+              Looks up a localized string similar to The requested API version &apos;{0}&apos; is not supported..
+            </summary>
+        </member>
+        <member name="P:Microsoft.Web.Http.SR.ApiVersionUnspecified">
+            <summary>
+              Looks up a localized string similar to An API version is required, but was not specified..
+            </summary>
+        </member>
+        <member name="P:Microsoft.Web.Http.SR.ControllerNameNotFound">
+            <summary>
+              Looks up a localized string similar to No route providing a controller name was found to match request URI &apos;{0}&apos;..
+            </summary>
+        </member>
+        <member name="P:Microsoft.Web.Http.SR.DefaultControllerFactory_ControllerNameAmbiguous_WithRouteTemplate">
+            <summary>
+              Looks up a localized string similar to Multiple types were found that match the controller named &apos;{0}&apos;. This can happen if the route that services this request (&apos;{1}&apos;) found multiple controllers defined with the same name but differing namespaces, which is not supported.{3}{3}The request for &apos;{0}&apos; has found the following matching controllers:{2}.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Web.Http.SR.DefaultControllerFactory_ControllerNameNotFound">
+            <summary>
+              Looks up a localized string similar to No type was found that matches the controller named &apos;{0}&apos;..
+            </summary>
+        </member>
+        <member name="P:Microsoft.Web.Http.SR.DirectRoute_AmbiguousController">
+            <summary>
+              Looks up a localized string similar to Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.{1}{1}The request has found the following matching controller types: {0}.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Web.Http.SR.InvalidActionMethodExpression">
+            <summary>
+              Looks up a localized string similar to The expression &apos;{0}&apos; must refer to a controller action method..
+            </summary>
+        </member>
+        <member name="P:Microsoft.Web.Http.SR.InvalidFormatString">
+            <summary>
+              Looks up a localized string similar to Input string was not in a correct format..
+            </summary>
+        </member>
+        <member name="P:Microsoft.Web.Http.SR.MultipleDifferentApiVersionsRequested">
+            <summary>
+              Looks up a localized string similar to The following API versions were requested: {0}. At most, only a single API version may be specified. Please update the intended API version and retry the request..
+            </summary>
+        </member>
+        <member name="P:Microsoft.Web.Http.SR.ResourceNotFound">
+            <summary>
+              Looks up a localized string similar to No HTTP resource was found that matches the request URI &apos;{0}&apos;..
+            </summary>
+        </member>
+        <member name="P:Microsoft.Web.Http.SR.VersionedActionNameNotFound">
+            <summary>
+              Looks up a localized string similar to No route providing a controller name with API version &apos;{2}&apos; was found to match HTTP method &apos;{1}&apos; and request URI &apos;{0}&apos;..
+            </summary>
+        </member>
+        <member name="P:Microsoft.Web.Http.SR.VersionedControllerNameNotFound">
+            <summary>
+              Looks up a localized string similar to No route providing a controller name with API version &apos;{1}&apos; was found to match request URI &apos;{0}&apos;..
+            </summary>
+        </member>
+        <member name="P:Microsoft.Web.Http.SR.VersionedMethodNotSupported">
+            <summary>
+              Looks up a localized string similar to The requested resource with API version &apos;{0}&apos; does not support HTTP method &apos;{1}&apos;..
+            </summary>
+        </member>
+        <member name="P:Microsoft.Web.Http.SR.VersionedResourceNotSupported">
+            <summary>
+              Looks up a localized string similar to The HTTP resource that matches the request URI &apos;{0}&apos; does not support the API version &apos;{1}&apos;..
+            </summary>
+        </member>
+        <member name="P:Microsoft.Web.Http.SR.ZeroApiVersionReaders">
+            <summary>
+              Looks up a localized string similar to At least one IApiVersionReader must be specified..
+            </summary>
         </member>
         <member name="T:Microsoft.Web.Http.Versioning.ApiVersionModel">
             <content>
@@ -488,6 +422,18 @@
             <summary>
             Represents the API version information for an ASP.NET controller or action.
             </summary>
+        </member>
+        <member name="M:Microsoft.Web.Http.Versioning.ApiVersionModel.#ctor(System.Web.Http.Controllers.HttpControllerDescriptor)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Web.Http.Versioning.ApiVersionModel"/> class.
+            </summary>
+            <param name="controllerDescriptor">The <see cref="T:System.Web.Http.Controllers.HttpControllerDescriptor"/> to initialize the API version model from.</param>
+        </member>
+        <member name="M:Microsoft.Web.Http.Versioning.ApiVersionModel.#ctor(System.Web.Http.Controllers.HttpActionDescriptor)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Web.Http.Versioning.ApiVersionModel"/> class.
+            </summary>
+            <param name="actionDescriptor">The <see cref="T:System.Web.Http.Controllers.HttpActionDescriptor"/> to initialize the API version model from.</param>
         </member>
         <member name="M:Microsoft.Web.Http.Versioning.ApiVersionModel.#ctor(Microsoft.Web.Http.ApiVersion)">
             <summary>
@@ -506,6 +452,16 @@
             <see cref="P:Microsoft.Web.Http.Versioning.ApiVersionModel.ImplementedApiVersions">implemented API versions</see> are a union between the
             <paramref name="supportedVersions">supported versions</paramref> and <paramref name="deprecatedVersions">deprecated versions</paramref>,
             and the <see cref="P:Microsoft.Web.Http.Versioning.ApiVersionModel.DeclaredApiVersions">declared API versions</see> are always empty since no controller or action has been specified.</remarks>
+        </member>
+        <member name="M:Microsoft.Web.Http.Versioning.ApiVersionModel.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Web.Http.ApiVersion},System.Collections.Generic.IEnumerable{Microsoft.Web.Http.ApiVersion},System.Collections.Generic.IEnumerable{Microsoft.Web.Http.ApiVersion},System.Collections.Generic.IEnumerable{Microsoft.Web.Http.ApiVersion},System.Collections.Generic.IEnumerable{Microsoft.Web.Http.ApiVersion})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Web.Http.Versioning.ApiVersionModel"/> class.
+            </summary>
+            <param name="declaredVersions">The declared <see cref="T:System.Collections.Generic.IEnumerable`1">sequence</see> of <see cref="T:Microsoft.Web.Http.ApiVersion">API versions</see> on a controller or action.</param>
+            <param name="supportedVersions">The supported <see cref="T:System.Collections.Generic.IEnumerable`1">sequence</see> of <see cref="T:Microsoft.Web.Http.ApiVersion">API versions</see> on a controller.</param>
+            <param name="deprecatedVersions">The deprecated <see cref="T:System.Collections.Generic.IEnumerable`1">sequence</see> of <see cref="T:Microsoft.Web.Http.ApiVersion">API versions</see> on a controller.</param>
+            <param name="advertisedVersions">The advertised <see cref="T:System.Collections.Generic.IEnumerable`1">sequence</see> of <see cref="T:Microsoft.Web.Http.ApiVersion">API versions</see> on a controller.</param>
+            <param name="deprecatedAdvertisedVersions">The deprecated, advertised <see cref="T:System.Collections.Generic.IEnumerable`1">sequence</see> of <see cref="T:Microsoft.Web.Http.ApiVersion">API versions</see> on a controller.</param>
         </member>
         <member name="P:Microsoft.Web.Http.Versioning.ApiVersionModel.Default">
             <summary>
@@ -538,7 +494,7 @@
             </summary>
             <value>A <see cref="T:System.Collections.Generic.IReadOnlyList`1">read-only list</see> of <see cref="T:Microsoft.Web.Http.ApiVersion">API versions</see>
             declared by the controller or action.</value>
-            <remarks>The declared API versions are constrainted to the versions declared explicitly by the specified controller or action.</remarks>
+            <remarks>The declared API versions are constrained to the versions declared explicitly by the specified controller or action.</remarks>
         </member>
         <member name="P:Microsoft.Web.Http.Versioning.ApiVersionModel.ImplementedApiVersions">
             <summary>
@@ -565,162 +521,41 @@
             version is typically advertised six months or more before it becomes unsupported; in which case, the
             controller would no longer indicate that it is an <see cref="P:Microsoft.Web.Http.Versioning.ApiVersionModel.ImplementedApiVersions">implemented version</see>.</remarks>
         </member>
-        <member name="T:Microsoft.Web.Http.Versioning.ApiVersionReader">
+        <member name="T:Microsoft.Web.Http.Versioning.ApiVersionRequestProperties">
             <content>
-            Provides the implementation for ASP.NET Web API.
+            Provides additional implementation specific to ASP.NET Web API.
             </content>
             <summary>
-            Represents the base implementation of a service API version reader.
+            Represents current API versioning request properties.
             </summary>
         </member>
-        <member name="M:Microsoft.Web.Http.Versioning.ApiVersionReader.Read(System.Net.Http.HttpRequestMessage)">
+        <member name="M:Microsoft.Web.Http.Versioning.ApiVersionRequestProperties.#ctor(System.Net.Http.HttpRequestMessage)">
             <summary>
-            Reads the service API version value from a request.
-            </summary>
-            <param name="request">The <see cref="T:System.Net.Http.HttpRequestMessage">HTTP request</see> to read the API version from.</param>
-            <returns>The raw, unparsed service API version value read from the request or <c>null</c> if request does not contain an API version.</returns>
-        </member>
-        <member name="M:Microsoft.Web.Http.Versioning.ApiVersionReader.ReadFromQueryString(System.Net.Http.HttpRequestMessage,System.String)">
-            <summary>
-            Reads the service API version value from the query string of a request.
-            </summary>
-            <param name="request">The <see cref="T:System.Net.Http.HttpRequestMessage">HTTP request</see> to read the API version from.</param>
-            <param name="parameterName">The name of the query parameter to read from.</param>
-            <returns>The raw, unparsed service API version value read from the request or <c>null</c> if request does not contain an API version.</returns>
-            <exception cref="T:Microsoft.Web.Http.Versioning.AmbiguousApiVersionException">Multiple, different API versions were requested.</exception>
-        </member>
-        <member name="M:Microsoft.Web.Http.Versioning.ApiVersionReader.ReadFromHeader(System.Net.Http.HttpRequestMessage,System.Collections.Generic.IEnumerable{System.String})">
-            <summary>
-            Reads the service API version value from a HTTP header of a request.
-            </summary>
-            <param name="request">The <see cref="T:System.Net.Http.HttpRequestMessage">HTTP request</see> to read the API version from.</param>
-            <param name="headerNames">The <see cref="T:System.Collections.Generic.IEnumerable`1">sequence</see> of HTTP header names to extract the API version from.</param>
-            <returns>The raw, unparsed service API version value read from the request or <c>null</c> if request does not contain an API version.</returns>
-            <remarks>When multiple HTTP header names are specified, the first matching HTTP header will be used.</remarks>
-            <exception cref="T:Microsoft.Web.Http.Versioning.AmbiguousApiVersionException">Multiple, different API versions were requested.</exception>
-        </member>
-        <member name="M:Microsoft.Web.Http.Versioning.ApiVersionReader.#ctor">
-            <summary>
-            Initializes a new instance of the <see cref="T:Microsoft.Web.Http.Versioning.ApiVersionReader"/> class.
-            </summary>
-        </member>
-        <member name="T:Microsoft.Web.Http.Versioning.CreateBadRequestDelegate">
-            <summary>
-            Represents the function invoked to create a HTTP 400 (Bad Request) response related to API versioning.
+            Initializes a new instance of the <see cref="T:Microsoft.Web.Http.Versioning.ApiVersionRequestProperties"/> class.
             </summary>
             <param name="request">The current <see cref="T:System.Net.Http.HttpRequestMessage">HTTP request</see>.</param>
-            <param name="code">The associated error code.</param>
-            <param name="message">The error message.</param>
-            <param name="messageDetail">The detailed error message, if any.</param>
-            <returns>A <see cref="T:System.Net.Http.HttpResponseMessage">HTTP response</see> representing for status code 400 (Bad Request).</returns>
         </member>
-        <member name="T:Microsoft.Web.Http.Versioning.HeaderApiVersionReader">
-            <content>
-            Provides the implementation for ASP.NET Web API.
-            </content>
+        <member name="P:Microsoft.Web.Http.Versioning.ApiVersionRequestProperties.RawApiVersion">
             <summary>
-            Represents a service API version reader that reads the value from a HTTP header.
+            Gets the raw, unparsed API version for the current request.
             </summary>
+            <value>The unparsed API version value for the current request.</value>
         </member>
-        <member name="M:Microsoft.Web.Http.Versioning.HeaderApiVersionReader.Read(System.Net.Http.HttpRequestMessage)">
+        <member name="P:Microsoft.Web.Http.Versioning.ApiVersionRequestProperties.ApiVersion">
             <summary>
-            Reads the service API version value from a request.
+            Gets the API version for the current request.
             </summary>
-            <param name="request">The <see cref="T:System.Net.Http.HttpRequestMessage">HTTP request</see> to read the API version from.</param>
-            <returns>The raw, unparsed service API version value read from the request or <c>null</c> if request does not contain an API version.</returns>
-            <exception cref="T:Microsoft.Web.Http.Versioning.AmbiguousApiVersionException">Multiple, different API versions were requested.</exception>
+            <value>The current <see cref="P:Microsoft.Web.Http.Versioning.ApiVersionRequestProperties.ApiVersion">API version</see> for the current request.</value>
+            <remarks>If an API version was not provided for the current request or the value
+            provided is invalid, this property will return <c>null</c>.</remarks>
         </member>
-        <member name="M:Microsoft.Web.Http.Versioning.HeaderApiVersionReader.#ctor">
+        <member name="P:Microsoft.Web.Http.Versioning.ApiVersionRequestProperties.RouteParameterName">
             <summary>
-            Initializes a new instance of the <see cref="T:Microsoft.Web.Http.Versioning.HeaderApiVersionReader"/> class.
+            Gets or sets the route parameter name used in URL segment API versioning.
             </summary>
-        </member>
-        <member name="M:Microsoft.Web.Http.Versioning.HeaderApiVersionReader.#ctor(System.Collections.Generic.IEnumerable{System.String})">
-            <summary>
-            Initializes a new instance of the <see cref="T:Microsoft.Web.Http.Versioning.HeaderApiVersionReader"/> class.
-            </summary>
-            <param name="headerNames">A <see cref="T:System.Collections.Generic.IEnumerable`1">sequence</see> of HTTP header names to read the service API version from.</param>
-        </member>
-        <member name="M:Microsoft.Web.Http.Versioning.HeaderApiVersionReader.#ctor(System.String[])">
-            <summary>
-            Initializes a new instance of the <see cref="T:Microsoft.Web.Http.Versioning.HeaderApiVersionReader"/> class.
-            </summary>
-            <param name="headerNames">An array of HTTP header names to read the service API version from.</param>
-        </member>
-        <member name="P:Microsoft.Web.Http.Versioning.HeaderApiVersionReader.HeaderNames">
-            <summary>
-            Gets a collection of HTTP header names that the service API version can be read from.
-            </summary>
-            <value>A <see cref="T:System.Collections.Generic.ICollection`1">collection</see> of HTTP header names.</value>
-            <remarks>HTTP header names are evaluated in a case-insensitive manner.</remarks>
-        </member>
-        <member name="T:Microsoft.Web.Http.Versioning.QueryStringApiVersionReader">
-            <content>
-            Provides the implementation for ASP.NET Web API.
-            </content>
-            <summary>
-            Represents a service API version reader that reads the value from the query string in a URL.
-            </summary>
-        </member>
-        <member name="M:Microsoft.Web.Http.Versioning.QueryStringApiVersionReader.Read(System.Net.Http.HttpRequestMessage)">
-            <summary>
-            Reads the service API version value from a request.
-            </summary>
-            <param name="request">The <see cref="T:System.Net.Http.HttpRequestMessage">HTTP request</see> to read the API version from.</param>
-            <returns>The raw, unparsed service API version value read from the request or <c>null</c> if request does not contain an API version.</returns>
-            <exception cref="T:Microsoft.Web.Http.Versioning.AmbiguousApiVersionException">Multiple, different API versions were requested.</exception>
-        </member>
-        <member name="M:Microsoft.Web.Http.Versioning.QueryStringApiVersionReader.#ctor">
-            <summary>
-            Initializes a new instance of the <see cref="T:Microsoft.Web.Http.Versioning.QueryStringApiVersionReader"/> class.
-            </summary>
-        </member>
-        <member name="M:Microsoft.Web.Http.Versioning.QueryStringApiVersionReader.#ctor(System.String)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Microsoft.Web.Http.Versioning.QueryStringApiVersionReader"/> class.
-            </summary>
-            <param name="parameterName">The name of the query string parameter to read the service API version from.</param>
-        </member>
-        <member name="P:Microsoft.Web.Http.Versioning.QueryStringApiVersionReader.ParameterName">
-            <summary>
-            Gets the name of the query parameter to read the service API version from.
-            </summary>
-            <value>The name of the query parameter to read the service API version from.
-            The default value is "api-version".</value>
-        </member>
-        <member name="T:Microsoft.Web.Http.Versioning.QueryStringOrHeaderApiVersionReader">
-            <content>
-            Provides the implementation for ASP.NET Web API.
-            </content>
-            <summary>
-            Represents a service API version reader that reads the value from the query string in a URL or HTTP header.
-            </summary>
-        </member>
-        <member name="M:Microsoft.Web.Http.Versioning.QueryStringOrHeaderApiVersionReader.Read(System.Net.Http.HttpRequestMessage)">
-            <summary>
-            Reads the service API version value from a request.
-            </summary>
-            <param name="request">The <see cref="T:System.Net.Http.HttpRequestMessage">HTTP request</see> to read the API version from.</param>
-            <returns>The raw, unparsed service API version value read from the request or <c>null</c> if request does not contain an API version.</returns>
-            <exception cref="T:Microsoft.Web.Http.Versioning.AmbiguousApiVersionException">Multiple, different API versions were requested.</exception>
-        </member>
-        <member name="M:Microsoft.Web.Http.Versioning.QueryStringOrHeaderApiVersionReader.#ctor">
-            <summary>
-            Initializes a new instance of the <see cref="T:Microsoft.Web.Http.Versioning.QueryStringOrHeaderApiVersionReader"/> class.
-            </summary>
-        </member>
-        <member name="M:Microsoft.Web.Http.Versioning.QueryStringOrHeaderApiVersionReader.#ctor(System.String)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Microsoft.Web.Http.Versioning.QueryStringOrHeaderApiVersionReader"/> class.
-            </summary>
-            <param name="parameterName">The name of the query string parameter to read the service API version from.</param>
-        </member>
-        <member name="P:Microsoft.Web.Http.Versioning.QueryStringOrHeaderApiVersionReader.HeaderNames">
-            <summary>
-            Gets a collection of HTTP header names that the service API version can be read from.
-            </summary>
-            <value>A <see cref="T:System.Collections.Generic.ICollection`1">collection</see> of HTTP header names.</value>
-            <remarks>HTTP header names are evaluated in a case-insensitive manner.</remarks>
+            <value>The route parameter name used in URL segment API versioning.</value>
+            <remarks>This property is typically set by the <see cref="T:Microsoft.Web.Http.Routing.ApiVersionRouteConstraint"/>
+            and is not meant to be directly used in your code.</remarks>
         </member>
         <member name="T:Microsoft.Web.Http.Versioning.Conventions.ActionApiVersionConventionBuilderCollection`1">
             <content>
@@ -843,6 +678,8 @@
             </summary>
             <param name="controllerDescriptor">The <see cref="T:System.Web.Http.Controllers.HttpControllerDescriptor">controller descriptor</see>
             to apply configured conventions to.</param>
+            <returns>True if any conventions were applied to the
+            <paramref name="controllerDescriptor">controller descriptor</paramref>; otherwise, false.</returns>
         </member>
         <member name="T:Microsoft.Web.Http.Versioning.Conventions.ControllerApiVersionConventionBuilder`1">
             <content>
@@ -1457,6 +1294,243 @@
             </summary>
             <param name="item">The descriptor to apply the convention to.</param>
         </member>
+        <member name="T:Microsoft.Web.Http.Versioning.DefaultErrorResponseProvider">
+            <summary>
+            Represents the default implementation for creating HTTP error responses related to API versioning.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Web.Http.Versioning.DefaultErrorResponseProvider.CreateResponse(Microsoft.Web.Http.Versioning.ErrorResponseContext)">
+            <summary>
+            Creates and returns a new error response given the provided context.
+            </summary>
+            <param name="context">The <see cref="T:Microsoft.Web.Http.Versioning.ErrorResponseContext">error context</see> used to generate response.</param>
+            <returns>The generated <see cref="T:System.Net.Http.HttpResponseMessage">response</see>.</returns>
+        </member>
+        <member name="M:Microsoft.Web.Http.Versioning.DefaultErrorResponseProvider.CreateErrorContent(Microsoft.Web.Http.Versioning.ErrorResponseContext)">
+            <summary>
+            Creates the default error content using the given context.
+            </summary>
+            <param name="context">The <see cref="T:Microsoft.Web.Http.Versioning.ErrorResponseContext">error context</see> used to create the error content.</param>
+            <returns>A <see cref="T:System.Web.Http.HttpError">HTTP error</see> representing the error content.</returns>
+        </member>
+        <member name="T:Microsoft.Web.Http.Versioning.ErrorResponseContext">
+            <content>
+            Provides additional implementation specific to ASP.NET Web API.
+            </content>
+            <summary>
+            Represents the contextual information used when generating HTTP error responses related to API versioning.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Web.Http.Versioning.ErrorResponseContext.#ctor(System.Net.Http.HttpRequestMessage,System.Net.HttpStatusCode,System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Web.Http.Versioning.ErrorResponseContext"/> class.
+            </summary>
+            <param name="request">The current <see cref="T:System.Net.Http.HttpRequestMessage">HTTP request</see>.</param>
+            <param name="statusCode">The associated <see cref="T:System.Net.HttpStatusCode">HTTP status code</see>.</param>
+            <param name="errorCode">The associated error code.</param>
+            <param name="message">The error message.</param>
+            <param name="messageDetail">The detailed error message, if any.</param>
+        </member>
+        <member name="P:Microsoft.Web.Http.Versioning.ErrorResponseContext.Request">
+            <summary>
+            Gets the current HTTP request.
+            </summary>
+            <value>The current <see cref="T:System.Net.Http.HttpRequestMessage">HTTP request</see>.</value>
+        </member>
+        <member name="P:Microsoft.Web.Http.Versioning.ErrorResponseContext.StatusCode">
+            <summary>
+            Gets the associated HTTP status code.
+            </summary>
+            <value>The associated HTTP status code.</value>
+        </member>
+        <member name="P:Microsoft.Web.Http.Versioning.ErrorResponseContext.ErrorCode">
+            <summary>
+            Gets the associated error code.
+            </summary>
+            <value>The associated error code.</value>
+        </member>
+        <member name="P:Microsoft.Web.Http.Versioning.ErrorResponseContext.Message">
+            <summary>
+            Gets the associated error message.
+            </summary>
+            <value>The error message.</value>
+        </member>
+        <member name="P:Microsoft.Web.Http.Versioning.ErrorResponseContext.MessageDetail">
+            <summary>
+            Gets the detailed error message.
+            </summary>
+            <value>The detailed error message, if any.</value>
+        </member>
+        <member name="T:Microsoft.Web.Http.Versioning.HeaderApiVersionReader">
+            <content>
+            Provides the implementation for ASP.NET Web API.
+            </content>
+            <summary>
+            Represents a service API version reader that reads the value from a HTTP header.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Web.Http.Versioning.HeaderApiVersionReader.Read(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            Reads the service API version value from a request.
+            </summary>
+            <param name="request">The <see cref="T:System.Net.Http.HttpRequestMessage">HTTP request</see> to read the API version from.</param>
+            <returns>The raw, unparsed service API version value read from the request or <c>null</c> if request does not contain an API version.</returns>
+            <exception cref="T:Microsoft.Web.Http.Versioning.AmbiguousApiVersionException">Multiple, different API versions were requested.</exception>
+        </member>
+        <member name="M:Microsoft.Web.Http.Versioning.HeaderApiVersionReader.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Web.Http.Versioning.HeaderApiVersionReader"/> class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Web.Http.Versioning.HeaderApiVersionReader.#ctor(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Web.Http.Versioning.HeaderApiVersionReader"/> class.
+            </summary>
+            <param name="headerNames">A <see cref="T:System.Collections.Generic.IEnumerable`1">sequence</see> of HTTP header names to read the service API version from.</param>
+        </member>
+        <member name="M:Microsoft.Web.Http.Versioning.HeaderApiVersionReader.#ctor(System.String[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Web.Http.Versioning.HeaderApiVersionReader"/> class.
+            </summary>
+            <param name="headerNames">An array of HTTP header names to read the service API version from.</param>
+        </member>
+        <member name="P:Microsoft.Web.Http.Versioning.HeaderApiVersionReader.HeaderNames">
+            <summary>
+            Gets a collection of HTTP header names that the service API version can be read from.
+            </summary>
+            <value>A <see cref="T:System.Collections.Generic.ICollection`1">collection</see> of HTTP header names.</value>
+            <remarks>HTTP header names are evaluated in a case-insensitive manner.</remarks>
+        </member>
+        <member name="M:Microsoft.Web.Http.Versioning.HeaderApiVersionReader.AddParmeters(Microsoft.Web.Http.Versioning.IApiVersionParameterDescriptionContext)">
+            <summary>
+            Provides API version parameter descriptions supported by the current reader using the supplied provider.
+            </summary>
+            <param name="context">The <see cref="T:Microsoft.Web.Http.Versioning.IApiVersionParameterDescriptionContext">context</see> used to add API version parameter descriptions.</param>
+        </member>
+        <member name="T:Microsoft.Web.Http.Versioning.MediaTypeApiVersionReader">
+            <content>
+            Provides the implementation for ASP.NET Web API.
+            </content>
+            <summary>
+            Represents a service API version reader that reads the value from a media type HTTP header in the request.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Web.Http.Versioning.MediaTypeApiVersionReader.Read(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            Reads the service API version value from a request.
+            </summary>
+            <param name="request">The <see cref="T:System.Net.Http.HttpRequestMessage">HTTP request</see> to read the API version from.</param>
+            <returns>The raw, unparsed service API version value read from the request or <c>null</c> if request does not contain an API version.</returns>
+            <exception cref="T:Microsoft.Web.Http.Versioning.AmbiguousApiVersionException">Multiple, different API versions were requested.</exception>
+        </member>
+        <member name="M:Microsoft.Web.Http.Versioning.MediaTypeApiVersionReader.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Web.Http.Versioning.MediaTypeApiVersionReader"/> class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Web.Http.Versioning.MediaTypeApiVersionReader.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Web.Http.Versioning.MediaTypeApiVersionReader"/> class.
+            </summary>
+            <param name="parameterName">The name of the query string parameter to read the service API version from.</param>
+        </member>
+        <member name="P:Microsoft.Web.Http.Versioning.MediaTypeApiVersionReader.ParameterName">
+            <summary>
+            Gets or sets the name of the media type parameter to read the service API version from.
+            </summary>
+            <value>The name of the media type parameter to read the service API version from.
+            The default value is "v".</value>
+        </member>
+        <member name="M:Microsoft.Web.Http.Versioning.MediaTypeApiVersionReader.ReadAcceptHeader(System.Collections.Generic.IEnumerable{System.Net.Http.Headers.MediaTypeWithQualityHeaderValue})">
+            <summary>
+            Reads the requested API version from the HTTP Accept header.
+            </summary>
+            <param name="accept">The <see cref="T:System.Collections.Generic.IEnumerable`1">sequence</see> of Accept
+            <see cref="T:System.Net.Http.Headers.MediaTypeWithQualityHeaderValue">headers</see> to read from.</param>
+            <returns>The API version read or <c>null</c>.</returns>
+            <remarks>The default implementation will return the first defined API version ranked by the media type
+            quality parameter.</remarks>
+        </member>
+        <member name="M:Microsoft.Web.Http.Versioning.MediaTypeApiVersionReader.ReadContentTypeHeader(System.Net.Http.Headers.MediaTypeHeaderValue)">
+            <summary>
+            Reads the requested API version from the HTTP Content-Type header.
+            </summary>
+            <param name="contentType">The Content-Type <see cref="T:System.Net.Http.Headers.MediaTypeHeaderValue">header</see> to read from.</param>
+            <returns>The API version read or <c>null</c>.</returns>
+        </member>
+        <member name="M:Microsoft.Web.Http.Versioning.MediaTypeApiVersionReader.AddParmeters(Microsoft.Web.Http.Versioning.IApiVersionParameterDescriptionContext)">
+            <summary>
+            Provides API version parameter descriptions supported by the current reader using the supplied provider.
+            </summary>
+            <param name="context">The <see cref="T:Microsoft.Web.Http.Versioning.IApiVersionParameterDescriptionContext">context</see> used to add API version parameter descriptions.</param>
+        </member>
+        <member name="T:Microsoft.Web.Http.Versioning.QueryStringApiVersionReader">
+            <content>
+            Provides the implementation for ASP.NET Web API.
+            </content>
+            <summary>
+            Represents a service API version reader that reads the value from the query string in a URL.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Web.Http.Versioning.QueryStringApiVersionReader.Read(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            Reads the service API version value from a request.
+            </summary>
+            <param name="request">The <see cref="T:System.Net.Http.HttpRequestMessage">HTTP request</see> to read the API version from.</param>
+            <returns>The raw, unparsed service API version value read from the request or <c>null</c> if request does not contain an API version.</returns>
+            <exception cref="T:Microsoft.Web.Http.Versioning.AmbiguousApiVersionException">Multiple, different API versions were requested.</exception>
+        </member>
+        <member name="M:Microsoft.Web.Http.Versioning.QueryStringApiVersionReader.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Web.Http.Versioning.QueryStringApiVersionReader"/> class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Web.Http.Versioning.QueryStringApiVersionReader.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Web.Http.Versioning.QueryStringApiVersionReader"/> class.
+            </summary>
+            <param name="parameterName">The name of the query string parameter to read the service API version from.</param>
+        </member>
+        <member name="P:Microsoft.Web.Http.Versioning.QueryStringApiVersionReader.ParameterName">
+            <summary>
+            Gets or sets the name of the query parameter to read the service API version from.
+            </summary>
+            <value>The name of the query parameter to read the service API version from.
+            The default value is "api-version".</value>
+        </member>
+        <member name="M:Microsoft.Web.Http.Versioning.QueryStringApiVersionReader.AddParmeters(Microsoft.Web.Http.Versioning.IApiVersionParameterDescriptionContext)">
+            <summary>
+            Provides API version parameter descriptions supported by the current reader using the supplied provider.
+            </summary>
+            <param name="context">The <see cref="T:Microsoft.Web.Http.Versioning.IApiVersionParameterDescriptionContext">context</see> used to add API version parameter descriptions.</param>
+        </member>
+        <member name="T:Microsoft.Web.Http.Versioning.UrlSegmentApiVersionReader">
+            <content>
+            Provides the implementation for ASP.NET Web API.
+            </content>
+            <summary>
+            Represents a service API version reader that reads the value from a path segment in the request URL.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Web.Http.Versioning.UrlSegmentApiVersionReader.Read(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            Reads the service API version value from a request.
+            </summary>
+            <param name="request">The <see cref="T:System.Net.Http.HttpRequestMessage">HTTP request</see> to read the API version from.</param>
+            <returns>The raw, unparsed service API version value read from the request or <c>null</c> if request does not contain an API version.</returns>
+            <exception cref="T:Microsoft.Web.Http.Versioning.AmbiguousApiVersionException">Multiple, different API versions were requested.</exception>
+        </member>
+        <member name="M:Microsoft.Web.Http.Versioning.UrlSegmentApiVersionReader.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Web.Http.Versioning.UrlSegmentApiVersionReader"/> class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Web.Http.Versioning.UrlSegmentApiVersionReader.AddParmeters(Microsoft.Web.Http.Versioning.IApiVersionParameterDescriptionContext)">
+            <summary>
+            Provides API version parameter descriptions supported by the current reader using the supplied provider.
+            </summary>
+            <param name="context">The <see cref="T:Microsoft.Web.Http.Versioning.IApiVersionParameterDescriptionContext">context</see> used to add API version parameter descriptions.</param>
+        </member>
         <member name="T:Microsoft.Web.Http.Versioning.AmbiguousApiVersionException">
             <summary>
             Represents the exception thrown when multiple, different API versions specified in a single request.
@@ -1497,6 +1571,363 @@
             <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo">serialization info</see> the exception is being serialized with.</param>
             <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext">streaming context</see> the exception is being serialized in.</param>
         </member>
+        <member name="T:Microsoft.Web.Http.Versioning.ApiVersionFormatProvider">
+            <summary>
+            Represents a format provider for <see cref="T:Microsoft.Web.Http.ApiVersion">API versions</see>.
+            </summary>
+            <remarks>
+            <para>This format provider supports the following custom format strings:</para>
+            <list type="table">
+                <listheader>
+                    <term>Format specifier</term>
+                    <description>Description</description>
+                    <description>Examples</description>
+                </listheader>
+                <item>
+                    <term>"F"</term>
+                    <description>The full, formatted API version where optional, absent components are ommitted.</description>
+                    <description>
+                        <para>2017-01-01 -> 2017-01-01</para>
+                        <para>2017-01-01.1 -> 2017-01-01.1</para>
+                        <para>2017-01-01.1.5-RC -> 2017-01-01.1.5-RC</para>
+                        <para>2017-01-01-Beta -> 2017-01-01-Beta</para>
+                        <para>1 -> 1</para>
+                        <para>1.5 -> 1.5</para>
+                        <para>1-Beta -> 1-Beta</para>
+                        <para>0.9-Alpha -> 0.9-Alpha</para>
+                    </description>
+                </item>
+                <item>
+                    <term>"FF"</term>
+                    <description>The full, formatted API version where optional components have default values.</description>
+                    <description>
+                        <para>2017-01-01 -> 2017-01-01</para>
+                        <para>2017-01-01.1 -> 2017-01-01.1.0</para>
+                        <para>2017-01-01.1.5-RC -> 2017-01-01.1.5-RC</para>
+                        <para>2017-01-01-Beta -> 2017-01-01-Beta</para>
+                        <para>1 -> 1.0</para>
+                        <para>1.5 -> 1.5</para>
+                        <para>1-Beta -> 1.0-Beta</para>
+                        <para>0.9-Alpha -> 0.9-Alpha</para>
+                    </description>
+                </item>
+                <item>
+                    <term>"G"</term>
+                    <description>The group version of the API group version.</description>
+                    <description>
+                        <para>2017-01-01 -> 2017-01-01</para>
+                        <para>2017-01-01-RC -> 2017-01-01</para>
+                        <para>2017-01-01.1.0 -> 2017-01-01</para>
+                    </description>
+                </item>
+                <item>
+                    <term>"GG"</term>
+                    <description>The group version and status of the API group version.</description>
+                    <description>
+                        <para>2017-01-01-RC -> 2017-01-01-RC</para>
+                        <para>2017-01-01.1.0-RC -> 2017-01-01-RC</para>
+                    </description>
+                </item>
+                <item>
+                    <term>"yyyy"</term>
+                    <description>The year of the API group version.</description>
+                    <description>
+                        <para>2017-01-01 -> 2017</para>
+                        <para>2017-01-01-RC -> 2017</para>
+                    </description>
+                </item>
+                <item>
+                    <term>"MM"</term>
+                    <description>The month of the API group version.</description>
+                    <description>
+                        <para>2017-01-01 -> 01</para>
+                        <para>2017-01-01-RC -> 01</para>
+                    </description>
+                </item>
+                <item>
+                    <term>"dd"</term>
+                    <description>The day of the API group version.</description>
+                    <description>
+                        <para>2017-01-01 -> 01</para>
+                        <para>2017-01-01-RC -> 01</para>
+                    </description>
+                </item>
+                <item>
+                    <term>"v"</term>
+                    <description>The minor version of the API version.</description>
+                    <description>
+                        <para>1.5 -> 5</para>
+                        <para>1.5-Alpha -> 5</para>
+                    </description>
+                </item>
+                <item>
+                    <term>"V"</term>
+                    <description>The major version of the API version.</description>
+                    <description>
+                        <para>1.5 -> 1</para>
+                        <para>1.5-Alpha -> 1</para>
+                    </description>
+                </item>
+                <item>
+                    <term>"VV"</term>
+                    <description>The major and minor version of the API version.</description>
+                    <description>
+                        <para>1.5 -> 1.5</para>
+                        <para>1 -> 1.0</para>
+                        <para>1.5-Alpha -> 1.5</para>
+                        <para>1-Alpha -> 1.0</para>
+                    </description>
+                </item>
+                <item>
+                    <term>"VVV"</term>
+                    <description>The major version, optional minor version, and status of the API version.</description>
+                    <description>
+                        <para>1 -> 1</para>
+                        <para>1.5 -> 1.5</para>
+                        <para>1-Alpha -> 1-Alpha</para>
+                        <para>1.5-Alpha -> 1.5-Alpha</para>
+                    </description>
+                </item>
+                <item>
+                    <term>"VVVV"</term>
+                    <description>The major version, minor version, and status of the API version.</description>
+                    <description>
+                        <para>1 -> 1.0</para>
+                        <para>1.5 -> 1.5</para>
+                        <para>1-Alpha -> 1.0-Alpha</para>
+                        <para>1.5-Alpha -> 1.5-Alpha</para>
+                    </description>
+                </item>
+                <item>
+                    <term>"p"</term>
+                    <description>The minor version of the API version with padded zeros. The default padding is for two digits.</description>
+                    <description>
+                        <para>1.5 -> 05</para>
+                        <para>1.5-Alpha -> 05</para>
+                    </description>
+                </item>
+                <item>
+                    <term>"p(n)"</term>
+                    <description>The minor version of the API version with padded zeros where "n" is the total number of digits.</description>
+                    <description>
+                        <para>p3 -> 1.5 -> 005</para>
+                        <para>p3 -> 1.5-Alpha -> 005</para>
+                    </description>
+                </item>
+                <item>
+                    <term>"P"</term>
+                    <description>The major version of the API version with padded zeros. The default padding is for two digits.</description>
+                    <description>
+                        <para>1.5 -> 01</para>
+                        <para>1.5-Alpha -> 01</para>
+                    </description>
+                </item>
+                <item>
+                    <term>"P(n)"</term>
+                    <description>The major version of the API version with padded zeros where "n" is the total number of digits.</description>
+                    <description>
+                        <para>P3 -> 1.5 -> 001</para>
+                        <para>P3 -> 1.5-Alpha -> 001</para>
+                    </description>
+                </item>
+                <item>
+                    <term>"S"</term>
+                    <description>The API version version status.</description>
+                    <description>
+                        <para>1.0-Beta -> Beta</para>
+                    </description>
+                </item>
+            </list>
+            </remarks>
+        </member>
+        <member name="M:Microsoft.Web.Http.Versioning.ApiVersionFormatProvider.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Web.Http.Versioning.ApiVersionFormatProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Web.Http.Versioning.ApiVersionFormatProvider.#ctor(System.Globalization.DateTimeFormatInfo)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Web.Http.Versioning.ApiVersionFormatProvider"/> class.
+            </summary>
+            <param name="dateTimeFormat">The <see cref="T:System.Globalization.DateTimeFormatInfo"/> used by the format provider.</param>
+        </member>
+        <member name="M:Microsoft.Web.Http.Versioning.ApiVersionFormatProvider.#ctor(System.Globalization.Calendar)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Web.Http.Versioning.ApiVersionFormatProvider"/> class.
+            </summary>
+            <param name="calendar">The <see cref="P:Microsoft.Web.Http.Versioning.ApiVersionFormatProvider.Calendar"/> used by the format provider.</param>
+        </member>
+        <member name="M:Microsoft.Web.Http.Versioning.ApiVersionFormatProvider.#ctor(System.Globalization.DateTimeFormatInfo,System.Globalization.Calendar)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Web.Http.Versioning.ApiVersionFormatProvider"/> class.
+            </summary>
+            <param name="dateTimeFormat">The <see cref="T:System.Globalization.DateTimeFormatInfo"/> used by the format provider.</param>
+            <param name="calendar">The <see cref="P:Microsoft.Web.Http.Versioning.ApiVersionFormatProvider.Calendar"/> used by the format provider.</param>
+        </member>
+        <member name="P:Microsoft.Web.Http.Versioning.ApiVersionFormatProvider.DateTimeFormat">
+            <summary>
+            Gets the underlying date and time format information.
+            </summary>
+            <value>A <see cref="T:System.Globalization.DateTimeFormatInfo"/> object.</value>
+        </member>
+        <member name="P:Microsoft.Web.Http.Versioning.ApiVersionFormatProvider.Calendar">
+            <summary>
+            Gets the calendar associated with the format provider.
+            </summary>
+            <value>A <see cref="P:Microsoft.Web.Http.Versioning.ApiVersionFormatProvider.Calendar"/> object.</value>
+            <remarks>The <see cref="P:System.Globalization.DateTimeFormatInfo.Calendar"/> cannot be assigned to a custom calendar.</remarks>
+        </member>
+        <member name="P:Microsoft.Web.Http.Versioning.ApiVersionFormatProvider.CurrentCulture">
+            <summary>
+            Gets the API version format provider for the current culture.
+            </summary>
+            <value>The <see cref="T:Microsoft.Web.Http.Versioning.ApiVersionFormatProvider"/> for the current culture.</value>
+        </member>
+        <member name="P:Microsoft.Web.Http.Versioning.ApiVersionFormatProvider.InvariantCulture">
+            <summary>
+            Gets the API version format provider for the invariant culture.
+            </summary>
+            <value>The <see cref="T:Microsoft.Web.Http.Versioning.ApiVersionFormatProvider"/> for the invariant culture.</value>
+        </member>
+        <member name="M:Microsoft.Web.Http.Versioning.ApiVersionFormatProvider.GetInstance(System.IFormatProvider)">
+            <summary>
+            Gets an instance of an API version format provider from the given format provider.
+            </summary>
+            <param name="formatProvider">The <see cref="T:System.IFormatProvider">format provider</see> used to retrieve the instance.</param>
+            <returns>An <see cref="T:Microsoft.Web.Http.Versioning.ApiVersionFormatProvider"/> object.</returns>
+        </member>
+        <member name="M:Microsoft.Web.Http.Versioning.ApiVersionFormatProvider.FormatAllParts(Microsoft.Web.Http.ApiVersion,System.String,System.IFormatProvider)">
+            <summary>
+            Formats all parts using the default format.
+            </summary>
+            <param name="apiVersion">The <see cref="T:Microsoft.Web.Http.ApiVersion">API version</see> to format.</param>
+            <param name="format">The format string for the API version. This parameter can be <c>null</c> or empty.</param>
+            <param name="formatProvider">The <see cref="T:System.IFormatProvider"/> used to apply the format.</param>
+            <returns>A formatted <see cref="T:System.String">string</see> representing the API version.</returns>
+        </member>
+        <member name="M:Microsoft.Web.Http.Versioning.ApiVersionFormatProvider.FormatGroupVersionPart(Microsoft.Web.Http.ApiVersion,System.String,System.IFormatProvider)">
+            <summary>
+            Formats the specified group version using the provided format.
+            </summary>
+            <param name="apiVersion">The <see cref="T:Microsoft.Web.Http.ApiVersion">API version</see> to format.</param>
+            <param name="format">The format string for the group version.</param>
+            <param name="formatProvider">The <see cref="T:System.IFormatProvider"/> used to apply the format.</param>
+            <returns>A formatted <see cref="T:System.String">string</see> representing the group version.</returns>
+        </member>
+        <member name="M:Microsoft.Web.Http.Versioning.ApiVersionFormatProvider.FormatVersionPart(Microsoft.Web.Http.ApiVersion,System.String,System.IFormatProvider)">
+            <summary>
+            Formats the specified version using the provided format.
+            </summary>
+            <param name="apiVersion">The <see cref="T:Microsoft.Web.Http.ApiVersion">API version</see> to format.</param>
+            <param name="format">The format string for the version.</param>
+            <param name="formatProvider">The <see cref="T:System.IFormatProvider"/> used to apply the format.</param>
+            <returns>A formatted <see cref="T:System.String">string</see> representing the version.</returns>
+        </member>
+        <member name="M:Microsoft.Web.Http.Versioning.ApiVersionFormatProvider.FormatStatusPart(Microsoft.Web.Http.ApiVersion,System.String,System.IFormatProvider)">
+            <summary>
+            Formats the specified status part using the provided format.
+            </summary>
+            <param name="apiVersion">The <see cref="T:Microsoft.Web.Http.ApiVersion">API version</see> to format.</param>
+            <param name="format">The format string for the status.</param>
+            <param name="formatProvider">The <see cref="T:System.IFormatProvider"/> used to apply the format.</param>
+            <returns>A formatted <see cref="T:System.String">string</see> representing the status.</returns>
+        </member>
+        <member name="M:Microsoft.Web.Http.Versioning.ApiVersionFormatProvider.GetFormat(System.Type)">
+            <summary>
+            Returns the formatter for the requested type.
+            </summary>
+            <param name="formatType">The <see cref="T:System.Type">type</see> of requested formatter.</param>
+            <returns>A <see cref="T:System.Globalization.DateTimeFormatInfo"/>, <see cref="T:System.ICustomFormatter"/>, or <c>null</c> depending on the requested <paramref name="formatType">format type</paramref>.</returns>
+        </member>
+        <member name="M:Microsoft.Web.Http.Versioning.ApiVersionFormatProvider.Format(System.String,System.Object,System.IFormatProvider)">
+            <summary>
+            Formats the provided argument with the specified format and provider.
+            </summary>
+            <param name="format">The format string to apply to the argument.</param>
+            <param name="arg">The argument to format.</param>
+            <param name="formatProvider">The <see cref="T:System.IFormatProvider"/> used to format the argument.</param>
+            <returns>A <see cref="T:System.String">string</see> represeting the formatted argument.</returns>
+        </member>
+        <member name="T:Microsoft.Web.Http.Versioning.ApiVersioningOptions">
+            <summary>
+            Represents the possible API versioning options for services.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Web.Http.Versioning.ApiVersioningOptions.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Web.Http.Versioning.ApiVersioningOptions"/> class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Web.Http.Versioning.ApiVersioningOptions.ReportApiVersions">
+            <summary>
+            Gets or sets a value indicating whether requests report the service API version compatibility
+            information in responses.
+            </summary>
+            <value>True if the responses contain service API version compatibility information; otherwise,
+            false. The default value is <c>false</c>.</value>
+            <remarks>
+            <para>When this property is set to <c>true</c>, the HTTP headers "api-supported-versions" and
+            "api-deprecated-versions" will be added to all valid service routes. This information is useful
+            for advertising which versions are supported and scheduled for deprecation to clients. This
+            information is also useful when supporting the OPTIONS verb.</para>
+            <para>By setting this property to <c>true</c>, the <see cref="T:Microsoft.Web.Http.ReportApiVersionsAttribute"/> will
+            be added a global action filter. To enable more granular control over when service API versions
+            are reported, apply the <see cref="T:Microsoft.Web.Http.ReportApiVersionsAttribute"/> on specific controllers or
+            controller actions.</para>
+            </remarks>
+        </member>
+        <member name="P:Microsoft.Web.Http.Versioning.ApiVersioningOptions.AssumeDefaultVersionWhenUnspecified">
+            <summary>
+            Gets or sets a value indicating whether a default version is assumed when a client does
+            does not provide a service API version.
+            </summary>
+            <value>True if the a default API version should be assumed when a client does not
+            provide a service API version; otherwise, false. The default value is <c>false</c>.</value>
+            <remarks>When a default API version is assumed, the version used is based up the
+            result of the <see cref="M:Microsoft.Web.Http.Versioning.IApiVersionSelector.SelectVersion(System.Net.Http.HttpRequestMessage,Microsoft.Web.Http.Versioning.ApiVersionModel)"/> method.</remarks>
+        </member>
+        <member name="P:Microsoft.Web.Http.Versioning.ApiVersioningOptions.DefaultApiVersion">
+            <summary>
+            Gets or sets the default API version applied to services that do not have explicit versions.
+            </summary>
+            <value>The default <see cref="T:Microsoft.Web.Http.ApiVersion">API version</see>. The default value is <see cref="P:Microsoft.Web.Http.ApiVersion.Default"/>.</value>
+        </member>
+        <member name="P:Microsoft.Web.Http.Versioning.ApiVersioningOptions.ApiVersionReader">
+            <summary>
+            Gets or sets the service API version reader.
+            </summary>
+            <value>An <see cref="T:Microsoft.Web.Http.Versioning.IApiVersionReader">API version reader</see> object. The default value
+            is an instance of the <see cref="T:Microsoft.Web.Http.Versioning.QueryStringApiVersionReader"/>.</value>
+            <remarks>The <see cref="T:Microsoft.Web.Http.Versioning.IApiVersionReader">API version reader</see> is used to read the
+            service API version specified by a client. The default value is the
+            <see cref="T:Microsoft.Web.Http.Versioning.QueryStringApiVersionReader"/>, which only reads the service API version from
+            the "api-version" query string parameter. Replace the default value with an alternate
+            implementation, such as the <see cref="T:Microsoft.Web.Http.Versioning.HeaderApiVersionReader"/>, which
+            can read the service API version from additional information like HTTP headers.</remarks>
+        </member>
+        <member name="P:Microsoft.Web.Http.Versioning.ApiVersioningOptions.ApiVersionSelector">
+            <summary>
+            Gets or sets the service API version selector.
+            </summary>
+            <value>An <see cref="T:Microsoft.Web.Http.Versioning.IApiVersionSelector">API version selector</see> object.
+            The default value is an instance of the <see cref="T:Microsoft.Web.Http.Versioning.DefaultApiVersionSelector"/>.</value>
+            <remarks>The <see cref="T:Microsoft.Web.Http.Versioning.IApiVersionSelector">API version selector</see> is used to select
+            an appropriate API version when a client does not specify a version. The default value is the
+            <see cref="T:Microsoft.Web.Http.Versioning.DefaultApiVersionSelector"/>, which always selects the <see cref="P:Microsoft.Web.Http.Versioning.ApiVersioningOptions.DefaultApiVersion"/>.</remarks>
+        </member>
+        <member name="P:Microsoft.Web.Http.Versioning.ApiVersioningOptions.Conventions">
+            <summary>
+            Gets or sets the builder used to define API version conventions.
+            </summary>
+            <value>An <see cref="T:Microsoft.Web.Http.Versioning.Conventions.ApiVersionConventionBuilder">API version convention builder</see>.</value>
+        </member>
+        <member name="P:Microsoft.Web.Http.Versioning.ApiVersioningOptions.ErrorResponses">
+            <summary>
+            Gets or sets the object used to generate HTTP error responses related to API versioning.
+            </summary>
+            <value>An <see cref="T:Microsoft.Web.Http.Versioning.IErrorResponseProvider">error response provider</see> object.
+            The default value is an instance of the <see cref="T:Microsoft.Web.Http.Versioning.DefaultErrorResponseProvider"/>.</value>
+        </member>
         <member name="T:Microsoft.Web.Http.Versioning.ApiVersionModelExtensions">
             <summary>
             Provides extension methods for the <see cref="T:Microsoft.Web.Http.Versioning.ApiVersionModel"/> class.
@@ -1529,6 +1960,52 @@
             </summary>
             <param name="versions">The <see cref="T:Microsoft.Web.Http.Versioning.ApiVersionModel">API version information</see> to aggregate.</param>
             <returns>A new <see cref="T:Microsoft.Web.Http.Versioning.ApiVersionModel"/> that is the aggregated result of the provided <paramref name="versions">version information</paramref>.</returns>
+        </member>
+        <member name="T:Microsoft.Web.Http.Versioning.ApiVersionParameterLocation">
+            <summary>
+            Represents the supported API version parameter description locations.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Web.Http.Versioning.ApiVersionParameterLocation.Query">
+            <summary>
+            Indicates the API version is expressed as a HTTP query string parameter.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Web.Http.Versioning.ApiVersionParameterLocation.Header">
+            <summary>
+            Indicates the API version is expressed as a HTTP header.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Web.Http.Versioning.ApiVersionParameterLocation.Path">
+            <summary>
+            Indicates the API version is expressed in a URL path segment.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Web.Http.Versioning.ApiVersionParameterLocation.MediaTypeParameter">
+            <summary>
+            Indicates the API version is expressed as a media type parameter.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Web.Http.Versioning.ApiVersionReader">
+            <summary>
+            Provides utility functions for service API version readers.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Web.Http.Versioning.ApiVersionReader.Combine(Microsoft.Web.Http.Versioning.IApiVersionReader[])">
+            <summary>
+            Returns a new API version reader that is a combination of the specified set.
+            </summary>
+            <param name="apiVersionReaders">The <see cref="T:System.Array">array</see> of
+            <see cref="T:Microsoft.Web.Http.Versioning.IApiVersionReader">API version readers</see> to combine.</param>
+            <returns>A new, unioned <see cref="T:Microsoft.Web.Http.Versioning.IApiVersionReader">API version reader</see>.</returns>
+        </member>
+        <member name="M:Microsoft.Web.Http.Versioning.ApiVersionReader.Combine(System.Collections.Generic.IEnumerable{Microsoft.Web.Http.Versioning.IApiVersionReader})">
+            <summary>
+            Returns a new API version reader that is a combination of the specified set.
+            </summary>
+            <param name="apiVersionReaders">The <see cref="T:System.Collections.Generic.IEnumerable`1">sequence</see> of
+            <see cref="T:Microsoft.Web.Http.Versioning.IApiVersionReader">API version readers</see> to combine.</param>
+            <returns>A new, unioned <see cref="T:Microsoft.Web.Http.Versioning.IApiVersionReader">API version reader</see>.</returns>
         </member>
         <member name="T:Microsoft.Web.Http.Versioning.ApiVersionsBaseAttribute">
             <summary>
@@ -1638,10 +2115,58 @@
             <param name="model">The <see cref="T:Microsoft.Web.Http.Versioning.ApiVersionModel">model</see> to select the version from.</param>
             <returns>The selected <see cref="T:Microsoft.Web.Http.ApiVersion">API version</see>.</returns>
         </member>
+        <member name="T:Microsoft.Web.Http.Versioning.ErrorCodes">
+            <summary>
+            Defines the standard error codes returned in responses related to API versioning.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Web.Http.Versioning.ErrorCodes.UnsupportedApiVersion">
+            <summary>
+            Indicates that the API version requested by the client is not supported.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Web.Http.Versioning.ErrorCodes.ApiVersionUnspecified">
+            <summary>
+            Indicates that an API version is required, but was not specified by the client.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Web.Http.Versioning.ErrorCodes.InvalidApiVersion">
+            <summary>
+            Indicates that API version requested by the client is invalid or malformed.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Web.Http.Versioning.ErrorCodes.AmbiguousApiVersion">
+            <summary>
+            Indicates that the client specified an API version multiple times and with different values.
+            </summary>
+        </member>
         <member name="T:Microsoft.Web.Http.Versioning.IApiVersionNeutral">
             <summary>
             Defines the behavior of a service that is API version-neutral.
             </summary>
+        </member>
+        <member name="T:Microsoft.Web.Http.Versioning.IApiVersionParameterDescriptionContext">
+            <summary>
+            Defines the behavior of an object that contains API version parameter descriptions.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Web.Http.Versioning.IApiVersionParameterDescriptionContext.AddParameter(System.String,Microsoft.Web.Http.Versioning.ApiVersionParameterLocation)">
+            <summary>
+            Adds an API version parameter with the specified name, from the specified location.
+            </summary>
+            <param name="name">The name of the parameter.</param>
+            <param name="location">One of the <see cref="T:Microsoft.Web.Http.Versioning.ApiVersionParameterLocation"/> values.</param>
+        </member>
+        <member name="T:Microsoft.Web.Http.Versioning.IApiVersionParameterSource">
+            <summary>
+            Defines the behavior of an object that is the source of API version parameters.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Web.Http.Versioning.IApiVersionParameterSource.AddParmeters(Microsoft.Web.Http.Versioning.IApiVersionParameterDescriptionContext)">
+            <summary>
+            Provides API version parameter descriptions supported by the current source using the supplied context.
+            </summary>
+            <param name="context">The <see cref="T:Microsoft.Web.Http.Versioning.IApiVersionParameterDescriptionContext">context</see> used to add API version parameter descriptions.</param>
         </member>
         <member name="T:Microsoft.Web.Http.Versioning.IApiVersionProvider">
             <summary>
@@ -1692,6 +2217,18 @@
             <param name="request">The current <see cref="T:System.Net.Http.HttpRequestMessage">HTTP request</see> to select the version for.</param>
             <param name="model">The <see cref="T:Microsoft.Web.Http.Versioning.ApiVersionModel">model</see> to select the version from.</param>
             <returns>The selected <see cref="T:Microsoft.Web.Http.ApiVersion">API version</see>.</returns>
+        </member>
+        <member name="T:Microsoft.Web.Http.Versioning.IErrorResponseProvider">
+            <summary>
+            Defines the behavior of an object that provides HTTP error responses related to API versioning.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Web.Http.Versioning.IErrorResponseProvider.CreateResponse(Microsoft.Web.Http.Versioning.ErrorResponseContext)">
+            <summary>
+            Creates and returns a new error response given the provided context.
+            </summary>
+            <param name="context">The <see cref="T:Microsoft.Web.Http.Versioning.ErrorResponseContext">error context</see> used to generate response.</param>
+            <returns>The generated <see cref="T:System.Net.Http.HttpResponseMessage">response</see>.</returns>
         </member>
         <member name="T:Microsoft.Web.Http.Versioning.LowestImplementedApiVersionSelector">
             <summary>
@@ -1869,36 +2406,9 @@
         <member name="M:Microsoft.Web.Http.ApiVersion.ToString(System.String)">
             <summary>
             Returns the text representation of the version using the specified format and format provider.
-            </summary>
-            <param name="format">The format to return the text representation in.</param>
+            <seealso cref="T:Microsoft.Web.Http.Versioning.ApiVersionFormatProvider"/></summary>
+            <param name="format">The format to return the text representation in. The value can be <c>null</c> or empty.</param>
             <returns>The <see cref="T:System.String">string</see> representation of the version.</returns>
-            <remarks>The supported format codes are:
-            <para>
-            <list type="table">
-                <listheader>
-                    <term>Format</term>
-                    <description>Description</description>
-                </listheader>
-                <item>
-                    <term>G, g</term>
-                    <description>Returns only the <see cref="P:GroupVersion">group version</see>, if present.</description>
-                </item>
-                <item>
-                    <term>V, v</term>
-                    <description>Returns only the <see cref="P:MajorVersion">major</see> and <see cref="P:MinorVersion">minor</see> versions, if present.</description>
-                </item>
-                <item>
-                    <term>S, s</term>
-                    <description>Returns full API version with the <see cref="P:Status">status</see>, if <see cref="P:Status">status</see> is present.</description>
-                </item>
-                <item>
-                    <term>F, f</term>
-                    <description>Returns the full API version.</description>
-                </item>
-            </list>
-            </para>
-            </remarks>
-            <exception cref="T:System.ArgumentNullException">The specified <paramref name="format"/> is <c>null</c> or any empty string.</exception>
             <exception cref="T:System.FormatException">The specified <paramref name="format"/> is not one of the supported format values.</exception>
         </member>
         <member name="M:Microsoft.Web.Http.ApiVersion.ToString">
@@ -1991,38 +2501,11 @@
         <member name="M:Microsoft.Web.Http.ApiVersion.ToString(System.String,System.IFormatProvider)">
             <summary>
             Returns the text representation of the version using the specified format and format provider.
-            </summary>
-            <param name="format">The format to return the text representation in.</param>
+            <seealso cref="T:Microsoft.Web.Http.Versioning.ApiVersionFormatProvider"/></summary>
+            <param name="format">The format to return the text representation in. The value can be <c>null</c> or empty.</param>
             <param name="formatProvider">The <see cref="T:System.IFormatProvider">format provider</see> used to generate text.
-            This implementation should typically use an <see cref="P:CultureInfo.InvariantCulture">invariant culture</see>.</param>
+            This implementation should typically use an <see cref="P:System.Globalization.CultureInfo.InvariantCulture">invariant culture</see>.</param>
             <returns>The <see cref="T:System.String">string</see> representation of the version.</returns>
-            <remarks>The supported format codes are:
-            <para>
-            <list type="table">
-                <listheader>
-                    <term>Format</term>
-                    <description>Description</description>
-                </listheader>
-                <item>
-                    <term>G, g</term>
-                    <description>Returns only the <see cref="P:GroupVersion">group version</see>, if present.</description>
-                </item>
-                <item>
-                    <term>V, v</term>
-                    <description>Returns only the <see cref="P:MajorVersion">major</see> and <see cref="P:MinorVersion">minor</see> versions, if present.</description>
-                </item>
-                <item>
-                    <term>S, s</term>
-                    <description>Returns full API version with the <see cref="P:Status">status</see>, if <see cref="P:Status">status</see> is present.</description>
-                </item>
-                <item>
-                    <term>F, f</term>
-                    <description>Returns the full API version.</description>
-                </item>
-            </list>
-            </para>
-            </remarks>
-            <exception cref="T:System.ArgumentNullException">The specified <paramref name="format"/> is <c>null</c> or any empty string.</exception>
             <exception cref="T:System.FormatException">The specified <paramref name="format"/> is not one of the supported format values.</exception>
         </member>
         <member name="T:Microsoft.Web.Http.ApiVersionAttribute">
@@ -2155,7 +2638,7 @@
             <param name="controllerDescriptor">The <see cref="T:System.Web.Http.Controllers.HttpControllerDescriptor">controller</see> to evaluate.</param>
             <returns>A <see cref="T:System.Collections.Generic.IReadOnlyList`1">read-only list</see> of <see cref="T:Microsoft.Web.Http.ApiVersion">API versions</see>
             declared by the controller.</returns>
-            <remarks>The declared API versions are constrainted to the versions declared explicitly by the specified controller.</remarks>
+            <remarks>The declared API versions are constrained to the versions declared explicitly by the specified controller.</remarks>
         </member>
         <member name="M:System.Web.Http.HttpControllerDescriptorExtensions.GetImplementedApiVersions(System.Web.Http.Controllers.HttpControllerDescriptor)">
             <summary>
@@ -2197,15 +2680,12 @@
             <param name="request">The <see cref="T:System.Net.Http.HttpRequestMessage">request</see> to get the API versioning options for.</param>
             <returns>The current <see cref="T:Microsoft.Web.Http.Versioning.ApiVersioningOptions">API versioning options</see>.</returns>
         </member>
-        <member name="M:System.Web.Http.HttpRequestMessageExtensions.GetRawRequestedApiVersion(System.Net.Http.HttpRequestMessage)">
+        <member name="M:System.Web.Http.HttpRequestMessageExtensions.ApiVersionProperties(System.Net.Http.HttpRequestMessage)">
             <summary>
-            Gets the current raw, unparsed service API version requested.
+            Gets the current API versioning request properties.
             </summary>
-            <param name="request">The <see cref="T:System.Net.Http.HttpRequestMessage">request</see> to get the API version for.</param>
-            <returns>The raw, unparsed service API version or <c>null</c> if no service API version was requested.</returns>
-            <remarks>This method is primarily meant for internal use and is generally only useful for instrumentation purposes.
-            It is recommended that you use the <see cref="M:System.Web.Http.HttpRequestMessageExtensions.GetRequestedApiVersion(System.Net.Http.HttpRequestMessage)"/> instead.</remarks>
-            <exception cref="T:Microsoft.Web.Http.Versioning.AmbiguousApiVersionException">Multiple, different API versions were requested.</exception>
+            <param name="request">The <see cref="T:System.Net.Http.HttpRequestMessage">request</see> to get the API versioning properties for.</param>
+            <returns>The current <see cref="T:Microsoft.Web.Http.Versioning.ApiVersionRequestProperties">API versioning properties</see>.</returns>
         </member>
         <member name="M:System.Web.Http.HttpRequestMessageExtensions.GetRequestedApiVersion(System.Net.Http.HttpRequestMessage)">
             <summary>
@@ -2216,14 +2696,6 @@
             <remarks>This method will return <c>null</c> no service API version was requested or the requested
             service API version is in an invalid format.</remarks>
             <exception cref="T:Microsoft.Web.Http.Versioning.AmbiguousApiVersionException">Multiple, different API versions were requested.</exception>
-        </member>
-        <member name="M:System.Web.Http.HttpRequestMessageExtensions.SetRequestedApiVersion(System.Net.Http.HttpRequestMessage,Microsoft.Web.Http.ApiVersion)">
-            <summary>
-            Gets the current service API version requested.
-            </summary>
-            <param name="request">The <see cref="T:System.Net.Http.HttpRequestMessage">request</see> to get the API version for.</param>
-            <param name="version">The <see cref="T:Microsoft.Web.Http.ApiVersion">API version</see> to be set as the requested value.</param>
-            <remarks>This method is for internal use and is not meant to be called directly in your code.</remarks>
         </member>
     </members>
 </doc>
